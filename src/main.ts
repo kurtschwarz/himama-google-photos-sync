@@ -1,4 +1,8 @@
-async function main(): Promise<void> {}
+import { logger } from './initializers/logger.js'
+
+async function main(): Promise<void> {
+  logger.info('running')
+}
 
 export default main()
   .catch((error) => {
