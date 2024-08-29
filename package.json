@@ -1,0 +1,23 @@
+{
+  "name": "himama-photo-downloader",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurtschwarz/himama-photo-downloader.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "npm exec tsx watch --inspect=0.0.0.0:9229 ./src/main.ts",
+    "build": "npm exec tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "pino-pretty": "^11.2.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "pino": "^9.3.2"
+  }
+}
