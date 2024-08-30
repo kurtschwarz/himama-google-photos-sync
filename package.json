@@ -12,12 +12,18 @@
     "build": "npm exec tsc"
   },
   "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/needle": "^3.3.0",
     "@types/node": "^22.5.1",
+    "@types/user-agents": "^1.0.4",
     "pino-pretty": "^11.2.2",
     "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "pino": "^9.3.2"
+    "jsdom": "^25.0.0",
+    "needle": "^3.3.1",
+    "pino": "^9.3.2",
+    "user-agents": "^1.1.311"
   }
 }

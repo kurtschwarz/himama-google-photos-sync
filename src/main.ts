@@ -1,4 +1,5 @@
 import { logger } from './initializers/logger.js'
+import * as himama from './services/himama/index.js'
 
 async function main(): Promise<void> {
   logger.info('running')
