@@ -1,0 +1,7 @@
+services:
+  himama-photo-downloader:
+    build:
+      context: .
+      target: dev
+    env_file:
+      - .env
