@@ -8,22 +8,25 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "SERVICE_ENV=development npm exec tsx watch --inspect=0.0.0.0:9229 ./src/main.ts",
+    "cli": "npm exec tsx --no-deprecation --inspect=0.0.0.0:9229 ./src/main.ts --",
     "build": "npm exec tsc"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
     "@types/needle": "^3.3.0",
     "@types/node": "^22.5.1",
+    "@types/prompts": "^2.4.9",
     "@types/user-agents": "^1.0.4",
     "pino-pretty": "^11.2.2",
     "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "commander": "^12.1.0",
     "jsdom": "^25.0.0",
     "needle": "^3.3.1",
     "pino": "^9.3.2",
+    "prompts": "^2.4.2",
     "user-agents": "^1.1.311"
   }
 }

@@ -1,14 +1,10 @@
-import { logger } from './initializers/logger.js'
-import * as config from './services/config/index.js'
-import * as himama from './services/himama/index.js'
+import { program } from './initializers/commander.js'
+
+import './commands/list.js'
+import './commands/login.js'
 
 async function main(): Promise<void> {
-  logger.info('running')
-
-  himama.login(
-    config.require('HIMAMA_EMAIL'),
-    config.require('HIMAMA_PASSWORD'),
-  )
+  await program.parseAsync()
 }
 
 export default main()

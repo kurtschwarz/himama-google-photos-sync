@@ -7,13 +7,10 @@ export const logger = pino.default({
       return {}
     },
   },
-
-  ...process.env.SERVICE_ENV === 'development' ? {
-    transport: {
-      target: 'pino-pretty',
-      options: {
-        colorize: true,
-      },
+  transport: {
+    target: 'pino-pretty',
+    options: {
+      colorize: true,
     },
-  } : {},
+  },
 })
