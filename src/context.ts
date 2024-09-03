@@ -40,7 +40,7 @@ export const updateContext = <T = Context>(args: Partial<T>): T => {
     ...args,
   }
 
-  fs.writeFileSync('./data/.context.json', JSON.stringify(context))
+  fs.writeFileSync('./data/.context.json', JSON.stringify(context, null, "  "))
 
   storage.enterWith(context)
 
