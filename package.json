@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "cli": "npm exec tsx --no-deprecation --inspect=0.0.0.0:9229 ./src/main.ts --",
+    "cli": "NODE_OPTIONS=--disable-warning=DEP0040 npm exec tsx --inspect=0.0.0.0:9229 ./src/main.ts --",
     "build": "npm exec tsc"
   },
   "devDependencies": {
